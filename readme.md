@@ -14,8 +14,8 @@ This should sound like computer mainframes in old sci-fi movies. Two more things
 
 
 ## Thrid program
-
-``` // impulse to filter to dac
+```
+      // impulse to filter to dac
       Impulse i => BiQuad f => dac;
       // set the filter's pole radius
       .99 => f.prad;
@@ -35,4 +35,5 @@ This should sound like computer mainframes in old sci-fi movies. Two more things
           v + .1 => v;
           // advance time
           100::ms => now;
-      }```
+      }
+```
